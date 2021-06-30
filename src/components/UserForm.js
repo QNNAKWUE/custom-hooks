@@ -5,14 +5,9 @@ export default function UserForm() {
     const [firstName, setfirstName] = useState('');
     const [lastName, setlastName] = useState('');
 
-    const submitHandler = e => {
-        e.preventDefault();
-        alert(`Hello ${firstName} ${lastName}`);
-    }
-
     return(
         <>
-            <form onSubmit={submitHandler}>
+            <form>
                 <div>
                     <label>First Name</label>
                     <input 
